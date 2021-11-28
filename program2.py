@@ -11,11 +11,11 @@ def validate_pass():
                 if i == '~' or i == '`' or i == '!' or i == '@' or i == '#' or i == '$' or i == '%' or i == '^' or i == '&' or i == '*' or i == '(' or i == ')' or i == '_' or i == '–' or i == '+' or i == '=' or i == '{' or i == '[' or i == '}' or i == ']' or i == '|' or i == '/' or i == ':' or i == ';' or i == '“' or i == '‘' or i == '<' or i == ',' or i == '>' or i == '.' or i == '?':
                     special += 1
     else:
-       if upper <1:
+       if upper == 0:
            print("Invalid. Your password should include at least one uppercase letter.")
-           if digit <1:
+           if digit == 0:
                print("Invalid. Your password should include a number in it.")
-               if special < 1:
+               if special == 0:
                    print("Invalid. Your password should include at least one special character.")
                    if len(password) < 15:
                        print("Invalid. Your password should at least include 15 characters.")
