@@ -3,9 +3,9 @@ def validate_pass():
     password= input("Please enter a password here: ")
     for i in password:
         for word in password.split():
-            if word.any([x.isupper() for x in password]):
+            if word.isupper():
                 upper += 1
-            if word.any([x.isdigit() for x in password]):
+            if word.isdigit():
                 digit += 1
             if i == '~' or i == '`' or i == '!' or i == '@' or i == '#' or i == '$' or i == '%' or i == '^' or i == '&' or i == '*' or i == '(' or i == ')' or i == '_' or i == '–' or i == '+' or i == '=' or i == '{' or i == '[' or i == '}' or i == ']' or i == '|' or i == '/' or i == ':' or i == ';' or i == '“' or i == '‘' or i == '<' or i == ',' or i == '>' or i == '.' or i == '?':
                 special += 1
