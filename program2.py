@@ -2,7 +2,7 @@ def validate_pass():
     count, upper, digit, special= 0, 0, 0, 0
     password= input("Please enter a password here: ")
     for word in password:
-            if word.isalpha():
+            if len(password) >15:
                 count += 1
             if word.isupper():
                 upper += 1
