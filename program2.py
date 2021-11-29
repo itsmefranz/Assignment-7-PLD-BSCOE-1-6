@@ -26,7 +26,7 @@ def validate_pass():
             if special == 0:
                 print("Invalid. Your password should include at least one special character.")
                 validate_pass()
-            if count <= 15:
+            if count < 15:
                 print("Invalid. Your password should at least include 15 characters.")
                 validate_pass()
             break
